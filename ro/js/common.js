@@ -488,14 +488,17 @@ jQuery(document).ready(function($) {
 
 /* MediaElement.js for HTML5 Video and Audio */
 (function ($) {
-	// add mime-type aliases to MediaElement plugin support
-	mejs.plugins.silverlight[0].types.push('video/x-ms-wmv');
-	mejs.plugins.silverlight[0].types.push('audio/x-ms-wma');
 
-	$(function () {
-		var settings = {};
+	if (typeof mejs !== 'undefined') {
+		// add mime-type aliases to MediaElement plugin support
+		mejs.plugins.silverlight[0].types.push('video/x-ms-wmv');
+		mejs.plugins.silverlight[0].types.push('audio/x-ms-wma');
 
-		$('.html5-audio, .html5-video').mediaelementplayer( settings );
-	});
+		$(function () {
+			var settings = {};
+
+			$('.html5-audio, .html5-video').mediaelementplayer( settings );
+		});
+	}
 
 }(jQuery));

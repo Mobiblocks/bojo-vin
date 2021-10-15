@@ -6,7 +6,7 @@
  */
  
 /* Your email address. The contact form will send emails to this address. You can add multiple addresses separated by commas. */
-$my_email_address='exportbojovin@gmail.com';
+$my_email_address='sales@bojo-vin.md';
 
 /* You may set CC and BCC values for the form here. Leave them blank if you don't wish to send any CC/BCC. */
 $cc='';

@@ -1,0 +1,11 @@
+/****************/
+/***   Zaio   ***/
+/****************/
+
+@font-face {
+    font-family: zaio;
+    src: url(../Fonts/Zaio.woff2) format('woff2'),
+         url(../Fonts/Zaio.woff) format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
